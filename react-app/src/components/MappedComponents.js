@@ -4,6 +4,7 @@
 
 require('./page/Page');
 require('./text/Text');
+require('./dorian-component/DorianComponent');
 require('./image/Image');
 require('./list/List');
 require('./gmap/Gmap');
