@@ -2,7 +2,6 @@ import React from "react";
 import { Page, withModel, EditorContext, Utils } from "@adobe/cq-react-editable-components";
 import { Redirect } from "react-router";
 import Header from "./components/header/Header";
-import DorianComponent from "./components/dorian-component/DorianComponent";
 
 /**
  * Returns a model path from the given URL
@@ -52,7 +51,6 @@ class App extends Page {
     return (
       <div className="App">
         <Header navigationRoot="/content/wknd-events/react/home" />
-        <DorianComponent test="dorian dawg"/>
         <EditorContext.Provider value={Utils.isInEditor()}>
           {this.redirect}
           {this.childComponents}
